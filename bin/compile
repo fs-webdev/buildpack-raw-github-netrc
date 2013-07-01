@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-[[ -z "$GITHUB_LOGIN" ]] && echo "GITHUB_LOGIN must be set in the env" && exit 1
-[[ -z "$GITHUB_PASSWORD" ]] && echo "GITHUB_PASSWORD must be set in the env" && exit 1
+[ -z "$GITHUB_LOGIN" ] && echo "GITHUB_LOGIN must be set in the env" && exit 1
+[ -z "$GITHUB_PASSWORD" ] && echo "GITHUB_PASSWORD must be set in the env" && exit 1
 
 echo "machine raw.github.com login $GITHUB_LOGIN password $GITHUB_PASSWORD" >> $HOME/.netrc
 exit 0
