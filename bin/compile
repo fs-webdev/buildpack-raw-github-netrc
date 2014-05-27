@@ -7,4 +7,5 @@ for KEY in GITHUB_LOGIN GITHUB_PASSWORD; do
 done
 
 echo "machine raw.github.com login $GITHUB_LOGIN password $GITHUB_PASSWORD" >> $HOME/.netrc
+echo "machine raw.githubusercontent.com login $GITHUB_LOGIN password $GITHUB_PASSWORD" >> $HOME/.netrc
 exit 0
